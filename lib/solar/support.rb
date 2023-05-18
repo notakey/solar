@@ -19,7 +19,7 @@ module Solar
       else
         # This preserves the internal precision of t (which we probably don't need)
         # and produces larger denominators in general
-        t.to_datetime.ajd
+        t.utc.to_datetime.ajd
       end
     end
 
