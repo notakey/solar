@@ -26,7 +26,7 @@ module Solar
     # Julian Day as Float
     def jd_f(t)
       # t.to_date.ajd.to_f + t.hour/24.0 + t.min/1440.0 + t.sec/86400.0
-      t.to_datetime.utc.ajd.to_f
+      t.to_datetime.ajd.to_f
     end
 
     def to_rad(deg)
